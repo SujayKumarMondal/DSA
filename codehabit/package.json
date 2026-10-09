@@ -1,0 +1,68 @@
+{
+  "name": "codehabit",
+  "displayName": "CodeHabit",
+  "description": "A private, offline coding tracker and progress dashboard.",
+  "version": "0.1.1",
+  "publisher": "local-codehabit",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other",
+    "Visualization"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "codehabit.openDashboard",
+        "title": "CodeHabit: Open Dashboard"
+      },
+      {
+        "command": "codehabit.markCurrentFileComplete",
+        "title": "CodeHabit: Mark Current File Complete"
+      },
+      {
+        "command": "codehabit.setGoals",
+        "title": "CodeHabit: Set Coding Goals"
+      },
+      {
+        "command": "codehabit.exportData",
+        "title": "CodeHabit: Export Data as JSON"
+      },
+      {
+        "command": "codehabit.toggleTracking",
+        "title": "CodeHabit: Pause or Resume Tracking"
+      }
+    ],
+    "configuration": {
+      "title": "CodeHabit",
+      "properties": {
+        "codehabit.idleTimeoutMinutes": {
+          "type": "number",
+          "default": 5,
+          "minimum": 1,
+          "maximum": 60,
+          "description": "Stop counting editor time after this many minutes without activity."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "check": "tsc --noEmit -p ./",
+    "vscode:prepublish": "npm run compile",
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/vscode": "^1.85.0",
+    "@vscode/vsce": "^4.0.0",
+    "typescript": "^5.3.3"
+  }
+}

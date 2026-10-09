@@ -1,47 +1,13 @@
-"""
-Problem 1: Two Sum
-
-Category: 01_Arrays_Hashing
-
-LeetCode / Interview Problem
-"""
-
-
-# ============================================================
-# Problem
-# ============================================================
-
-# Two Sum
+def two_sum(arr, t):
+    for i in range(len(arr)):
+        for j in range(i+1, len(arr)):
+            if arr[i] + arr[j] == t:
+                return [i, j]   
+            
 
 
-# ============================================================
-# Approach
-# ============================================================
-
-# TODO:
-# Explain your approach here.
-
-
-# ============================================================
-# Solution
-# ============================================================
-
-def solution():
-    pass
-
-
-# ============================================================
-# Complexity
-# ============================================================
-
-# Time Complexity:
-# Space Complexity:
-
-
-# ============================================================
-# Test Cases
-# ============================================================
-
-if __name__ == "__main__":
-    # Add your test cases here
-    pass
+l= list(map(int, input("enter arr elements separated by space: ").split()))
+t = int(input("enter target sum: "))
+res = two_sum(l, t)
+if res:
+    print(f"Indices of elements that sum to {t}: {res}")
