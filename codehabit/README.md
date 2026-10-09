@@ -17,8 +17,10 @@ The dashboard includes:
 - JSON export of all locally stored tracker data
 
 Time is counted only while VS Code is focused with a saved workspace file open.
-Editor activity resets the idle timer; tracking pauses after the configured idle
-timeout. Data stays in the local VS Code extension profile. CodeHabit does not
+Editing, moving the cursor, and scrolling in the editor reset the idle timer;
+tracking pauses after the configured idle timeout. Switching between saved
+workspace files does not discard the current tracking interval. Data stays in
+the local VS Code extension profile. CodeHabit does not
 create an account, send telemetry, or require an internet connection.
 Distinct edited-line, save, and focus-session metrics begin accumulating after
 the updated extension is installed; earlier coding-time, commit, and checklist

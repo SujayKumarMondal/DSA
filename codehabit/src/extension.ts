@@ -728,7 +728,9 @@ export async function activate(context: vscode.ExtensionContext): Promise<void> 
     }),
     vscode.window.onDidChangeActiveTextEditor(() => {
       lastActivity = Date.now();
-      lastTick = lastActivity;
+      if (!getActiveCodingContext()) {
+        lastTick = lastActivity;
+      }
       refreshStatus();
     }),
     vscode.window.onDidChangeWindowState((state) => {
@@ -781,6 +783,7 @@ export async function activate(context: vscode.ExtensionContext): Promise<void> 
       void updateDashboard();
     }),
     vscode.window.onDidChangeTextEditorSelection(() => { lastActivity = Date.now(); }),
+    vscode.window.onDidChangeTextEditorVisibleRanges(() => { lastActivity = Date.now(); }),
     vscode.workspace.onDidChangeWorkspaceFolders(async () => {
       await pollGit();
       for (const workspace of currentWorkspaces()) {

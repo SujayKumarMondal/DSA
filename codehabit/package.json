@@ -2,7 +2,7 @@
   "name": "codehabit",
   "displayName": "CodeHabit",
   "description": "A private, offline coding tracker and progress dashboard.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "publisher": "local-codehabit",
   "license": "MIT",
   "engines": {
