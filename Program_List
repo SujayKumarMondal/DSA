@@ -1,0 +1,552 @@
+Yes. In that case, I would change the 300-question list specifically around your profile, rather than giving you a generic LeetCode roadmap.
+You are preparing as a ~3-year Python/FastAPI backend developer, targeting startups + semi-MNCs + MNC/product companies, with DSA currently being a major gap. Your interviews are likely to combine coding with Python, SQL/PostgreSQL, backend fundamentals, APIs, system design and, increasingly, AI/backend work. So the DSA curriculum should emphasize interview patterns and practical problem solving, not competitive-programming-only algorithms.
+Your 300-question target
+Priority distribution
+Area	Questions	Priority
+Arrays	30	🔴 Critical
+Hashing	20	🔴 Critical
+Strings	20	🔴 Critical
+Two Pointers	15	🔴 Critical
+Sliding Window	15	🔴 Critical
+Prefix Sum	10	🔴 Critical
+Binary Search	20	🔴 Critical
+Linked List	20	🔴 Critical
+Stack / Monotonic Stack	20	🔴 Critical
+Queue / Deque	10	🟠 High
+Recursion / Backtracking	15	🟠 High
+Trees	25	🔴 Critical
+BST	10	🟠 High
+Heap / Priority Queue	15	🔴 Critical
+Intervals	10	🟠 High
+Greedy	10	🟠 High
+Graphs	25	🔴 Critical
+Dynamic Programming	25	🔴 Critical
+Bit Manipulation	5	🟡 Medium
+Trie / Advanced	5	🟡 Selective
+Total	300	
+
+PHASE 1 — Python DSA Foundation
+Questions 1–20
+Before serious interview problems, you need to become extremely comfortable with Python's data structures.
+Arrays
+1. Find maximum element
+2. Find minimum element
+3. Find second largest element
+4. Find second smallest element
+5. Check if array is sorted
+6. Reverse an array
+7. Reverse array in-place
+8. Count even and odd elements
+9. Find sum of array
+10. Find frequency of every element
+Basic Array Manipulation
+11. Remove duplicates from sorted array
+12. Remove duplicates from unsorted array
+13. Move zeroes to the end
+14. Move negative numbers to one side
+15. Find missing number
+16. Find duplicate number
+17. Find unique element
+18. Find intersection of two arrays
+19. Find union of two arrays
+20. Merge two sorted arrays
+Python you must know here
+
+
+• list
+• tuple
+• set
+• dict
+• collections.Counter
+• collections.defaultdict
+• collections.deque
+• slicing
+• enumerate
+• zip
+• sorted()
+• key=
+• list/dict comprehensions
+
+
+🟢 EASY — Fundamentals
+List
+	1. Find the largest element in a list. 
+	2. Find the smallest element. 
+	3. Find the sum of all elements. 
+	4. Count even and odd numbers. 
+	5. Reverse a list. 
+	6. Check whether a list is sorted. 
+	7. Remove duplicates from a list. 
+	8. Find the second largest element. 
+	9. Find the second smallest element. 
+	10. Find the frequency of each element. 
+Tuple
+	1. Convert a tuple into a list. 
+	2. Find the maximum and minimum in a tuple. 
+	3. Count occurrences of an element in a tuple. 
+	4. Find the index of an element. 
+	5. Remove duplicate values from a tuple. 
+	6. Combine two tuples. 
+	7. Unpack a tuple into variables. 
+Set
+	1. Remove duplicates from a list using a set. 
+	2. Find common elements between two lists. 
+	3. Find elements present only in the first list. 
+	4. Find elements present in either list but not both. 
+	5. Check whether two sets are equal. 
+	6. Check whether one set is a subset of another. 
+	7. Find unique elements from two arrays. 
+Dict
+	1. Create a frequency dictionary from a list. 
+	2. Find the key with the maximum value. 
+	3. Find the key with the minimum value. 
+	4. Merge two dictionaries. 
+	5. Check whether a key exists. 
+	6. Invert a dictionary {key: value} → {value: key}. 
+	7. Remove a key from a dictionary. 
+	8. Sort a dictionary by keys. 
+Slicing
+	1. Get the first 3 elements. 
+	2. Get the last 3 elements. 
+	3. Reverse a list using slicing. 
+	4. Get every second element. 
+	5. Get elements from index 2 to 7. 
+	6. Extract odd-indexed elements. 
+	7. Extract even-indexed elements. 
+	8. Reverse a string using slicing. 
+enumerate()
+	1. Print each element with its index. 
+	2. Find the index of a particular element. 
+	3. Find all indices where a value occurs. 
+	4. Replace elements at specific indices. 
+	5. Find the largest element and its index. 
+zip()
+	1. Combine two lists into pairs. 
+	2. Create a dictionary from two lists. 
+	3. Find matching elements from two lists. 
+	4. Compare two lists element-by-element. 
+	5. Calculate the sum of corresponding elements. 
+
+🟡 MEDIUM — Interview Level
+List
+	1. Find all duplicate elements. 
+	2. Find all elements appearing exactly once. 
+	3. Move all zeroes to the end. 
+	4. Move all negative numbers to the end. 
+	5. Rotate a list by K positions. 
+	6. Find the intersection of two arrays. 
+	7. Find the union of two arrays. 
+	8. Find the missing number. 
+	9. Find the duplicate number. 
+	10. Find all pairs with a given sum. 
+	11. Find the first repeating element. 
+	12. Find the first non-repeating element. 
+	13. Find the majority element. 
+	14. Find the longest consecutive sequence. 
+	15. Find the common elements among three lists. 
+collections.Counter
+	1. Count character frequency in a string. 
+	2. Count word frequency in a sentence. 
+	3. Find the most common element. 
+	4. Find the top K most frequent elements. 
+	5. Find elements that occur exactly once. 
+	6. Compare the frequencies of two strings. 
+	7. Check whether two strings are anagrams. 
+	8. Find common elements between two arrays using frequency. 
+	9. Find elements whose frequency is greater than K. 
+	10. Find the K most frequent words. 
+collections.defaultdict
+	1. Group words by their first character. 
+	2. Group students by department. 
+	3. Group employees by company/team. 
+	4. Build a dictionary of lists from two arrays. 
+	5. Create an adjacency list for a graph. 
+	6. Group anagrams together. 
+	7. Group numbers according to frequency. 
+	8. Build a nested dictionary automatically. 
+	9. Count values grouped by a key. 
+	10. Create a one-to-many mapping. 
+collections.deque
+	1. Implement a queue using deque. 
+	2. Implement a stack using deque. 
+	3. Reverse a queue. 
+	4. Process elements from both ends. 
+	5. Implement a sliding window. 
+	6. Keep only the last K elements. 
+	7. Implement a circular queue. 
+	8. Find maximum/minimum in a sliding window. 
+	9. Generate the first N binary numbers using a queue. 
+	10. Implement BFS using deque. 
+sorted() + key=
+	1. Sort a list of tuples by the second element. 
+	2. Sort strings by length. 
+	3. Sort dictionary items by value. 
+	4. Sort employees by salary. 
+	5. Sort students by marks. 
+	6. Sort strings alphabetically ignoring case. 
+	7. Sort numbers according to absolute value. 
+	8. Sort words by frequency. 
+	9. Sort intervals by starting point. 
+	10. Sort objects/dictionaries by multiple fields. 
+List Comprehension
+	1. Create a list of squares. 
+	2. Extract even numbers. 
+	3. Extract odd numbers. 
+	4. Convert strings to uppercase. 
+	5. Extract numbers greater than K. 
+	6. Flatten a nested list. 
+	7. Extract vowels from a string. 
+	8. Remove empty strings. 
+	9. Create a list of tuples. 
+	10. Generate multiplication-table values. 
+Dict Comprehension
+	1. Create {number: square}. 
+	2. Create a dictionary from two lists. 
+	3. Filter dictionary values. 
+	4. Swap keys and values. 
+	5. Create a frequency dictionary. 
+	6. Create {word: length}. 
+	7. Filter students based on marks. 
+	8. Convert a list into an indexed dictionary. 
+	9. Create a dictionary containing only even numbers. 
+	10. Transform an existing dictionary. 
+
+🔴 HARD — Advanced Interview Problems
+Lists + Dict/Set
+	1. Two Sum. 
+	2. Three Sum. 
+	3. Four Sum. 
+	4. Longest subarray with sum K. 
+	5. Longest subarray with equal 0s and 1s. 
+	6. Subarray with given sum. 
+	7. Count subarrays with sum K. 
+	8. Maximum subarray sum. 
+	9. Maximum product subarray. 
+	10. Product of array except self. 
+	11. Trapping Rain Water. 
+	12. Merge overlapping intervals. 
+	13. Insert an interval. 
+	14. Find missing and repeating numbers. 
+	15. Find the smallest missing positive integer. 
+Counter
+	1. Top K frequent elements. 
+	2. Top K frequent words. 
+	3. Find all anagrams in a string. 
+	4. Group anagrams. 
+	5. Minimum number of deletions to make two strings anagrams. 
+	6. Find the first unique character. 
+	7. Find the character with highest frequency. 
+	8. Reorganize a string based on character frequency. 
+	9. Find common elements across multiple arrays. 
+	10. Check whether two strings are isomorphic using frequency/mapping logic. 
+defaultdict
+	1. Build a graph adjacency list. 
+	2. Find connected components using an adjacency list. 
+	3. Group anagrams using sorted words as keys. 
+	4. Build an inverted index: word → documents. 
+	5. Group transactions by user. 
+	6. Group logs by date. 
+	7. Build a dependency graph. 
+	8. Find all nodes connected to a given node. 
+	9. Build a multi-level nested structure. 
+	10. Aggregate values by multiple keys. 
+deque
+	1. Sliding Window Maximum. 
+	2. Sliding Window Minimum. 
+	3. Maximum of every K-sized window. 
+	4. First negative number in every window of size K. 
+	5. First non-repeating character in a stream. 
+	6. Design a queue with O(1) operations. 
+	7. Design a circular deque. 
+	8. BFS shortest path in an unweighted graph. 
+	9. Rotting Oranges. 
+	10. 0-1 BFS. 
+sorted() + key=
+	1. Merge intervals after sorting. 
+	2. Meeting Rooms. 
+	3. Meeting Rooms II. 
+	4. Sort characters by frequency. 
+	5. Reconstruct a queue based on height. 
+	6. Largest number from a list of integers. 
+	7. Sort logs according to custom rules. 
+	8. Sort intervals by multiple conditions. 
+	9. Find K closest elements. 
+	10. Schedule tasks based on custom priority. 
+
+🔥 Combined Python Interview Problems
+These are particularly useful because they force you to combine the tools rather than use each one independently.
+	1. Two Sum using dict 
+	2. Contains Duplicate using set 
+	3. Valid Anagram using Counter 
+	4. Group Anagrams using defaultdict 
+	5. Top K Frequent Elements using Counter + heap/sorting 
+	6. Longest Consecutive Sequence using set 
+	7. Intersection of Arrays using set 
+	8. Intersection considering frequency using Counter 
+	9. Merge two dictionaries 
+	10. Merge dictionaries and add common values 
+	11. Sort dictionary by value using sorted(key=...) 
+	12. Sort list of dictionaries by multiple fields 
+	13. Find highest-paid employee using max(key=...) 
+	14. Find longest string using max(key=len) 
+	15. Group employees by department using defaultdict 
+	16. Create a dictionary from two lists using zip 
+	17. Find mismatched elements between two lists 
+	18. Find duplicate records using a set 
+	19. Remove duplicate dictionaries from a list 
+	20. Count duplicate words using Counter 
+	21. Find most frequent word 
+	22. Find least frequent word 
+	23. Group words according to their length 
+	24. Group numbers into even/odd using defaultdict 
+	25. Flatten a nested list using comprehension 
+	26. Create a frequency dictionary using comprehension 
+	27. Filter a dictionary using comprehension 
+	28. Transform dictionary values using comprehension 
+	29. Create a dictionary from zip() + comprehension 
+	30. Reverse a list using slicing 
+	31. Rotate a list using slicing 
+	32. Find common elements while preserving order 
+	33. Remove duplicates while preserving order 
+	34. Find first non-repeating element 
+	35. Find first repeating element 
+	36. Find all unique elements 
+	37. Find all duplicate elements 
+	38. Find elements occurring exactly K times 
+	39. Find elements occurring more than K times 
+	40. Find the K most frequent elements
+
+PHASE 2 — Arrays
+Questions 21–50
+21. Rotate array left by K
+22. Rotate array right by K
+23. Find majority element
+24. Find leaders in an array
+25. Find equilibrium index
+26. Find maximum difference
+27. Find minimum difference
+28. Find pair with minimum difference
+29. Sort 0s, 1s and 2s
+30. Dutch National Flag problem
+31. Rearrange positive and negative numbers
+32. Rearrange array alternately
+33. Find missing and repeating number
+34. Find all duplicates
+35. Find all missing numbers
+36. Maximum subarray sum — Kadane's Algorithm
+37. Maximum product subarray
+38. Best Time to Buy and Sell Stock
+39. Best Time to Buy and Sell Stock II
+40. Product of Array Except Self
+41. Container With Most Water
+42. Trapping Rain Water
+43. Find peak element
+44. Longest consecutive sequence
+45. Maximum consecutive ones
+46. Maximum consecutive ones with one replacement
+47. Merge overlapping intervals
+48. Insert interval
+49. Minimum number of platforms
+50. Candy distribution
+Your milestone
+At this point you should be able to recognize:
+	traversal → hashing → two pointers → prefix/suffix → Kadane → sorting → interval processing.
+
+PHASE 3 — Hashing
+Questions 51–70
+This is extremely important for startup and MNC coding rounds.
+51. Two Sum
+52. Two Sum — return indices
+53. Two Sum — sorted array
+54. Valid Anagram
+55. Group Anagrams
+56. First Unique Character
+57. First Repeating Character
+58. Find Duplicate Elements
+59. Longest Consecutive Sequence
+60. Top K Frequent Elements
+61. Top K Frequent Words
+62. Subarray Sum Equals K
+63. Longest Subarray With Sum K
+64. Count Zero-Sum Subarrays
+65. Longest Zero-Sum Subarray
+66. Count Subarrays With Equal 0s and 1s
+67. Longest Subarray With Equal 0s and 1s
+68. Continuous Subarray Sum
+69. Find Pairs With Given Difference
+70. Isomorphic Strings
+Pattern to master
+Need fast lookup?
+        ↓
+HashSet / HashMap
+
+Need frequency?
+        ↓
+Counter / defaultdict
+
+Need subarray property?
+        ↓
+Prefix Sum + HashMap
+
+PHASE 4 — Strings
+Questions 71–90
+71. Reverse a string
+72. Reverse words in a string
+73. Valid Palindrome
+74. Valid Palindrome II
+75. Character frequency
+76. Remove duplicate characters
+77. Longest word in a sentence
+78. Check string rotation
+79. String compression
+80. Roman Number → Integer
+81. Integer → Roman
+82. Add Binary
+83. Add Strings
+84. Multiply Strings
+85. Compare Version Numbers
+86. Valid Parentheses
+87. Isomorphic Strings
+88. Word Pattern
+89. Reorganize String
+90. Partition Labels
+
+PHASE 5 — Two Pointers
+Questions 91–105
+91. Two Sum II
+92. Remove Duplicates From Sorted Array
+93. Remove Element
+94. Move Zeroes
+95. Valid Palindrome
+96. Valid Palindrome II
+97. Squares of a Sorted Array
+98. Container With Most Water
+99. 3Sum
+100. 3Sum Closest
+101. 4Sum
+102. Pair With Target Sum
+103. Pair With Target Difference
+104. Boats to Save People
+105. Backspace String Compare
+
+PHASE 6 — Sliding Window
+Questions 106–120
+This deserves heavy practice because the pattern appears constantly.
+106. Maximum Sum Subarray of Size K
+107. Maximum Average Subarray
+108. Minimum Size Subarray Sum
+109. Longest Substring Without Repeating Characters
+110. Longest Substring With K Distinct Characters
+111. Longest Substring With At Most K Distinct Characters
+112. Longest Repeating Character Replacement
+113. Permutation in String
+114. Find All Anagrams in a String
+115. Minimum Window Substring
+116. Fruit Into Baskets
+117. Max Consecutive Ones III
+118. Binary Subarrays With Sum
+119. Subarrays With K Different Integers
+120. Minimum Operations to Reduce X to Zero
+
+PHASE 7 — Prefix Sum
+Questions 121–130
+121. Running Sum
+122. Range Sum Query
+123. Pivot Index
+124. Equilibrium Index
+125. Subarray Sum Equals K
+126. Subarray Sum Divisible by K
+127. Continuous Subarray Sum
+128. Corporate Flight Bookings
+129. Car Pooling
+130. 2D Matrix Prefix Sum
+
+PHASE 8 — Binary Search
+Questions 131–150
+You should be able to identify binary search on answer, not just ordinary binary search.
+131. Binary Search
+132. Search Insert Position
+133. First Occurrence
+134. Last Occurrence
+135. Count Occurrences
+136. Find First and Last Position
+137. Lower Bound
+138. Upper Bound
+139. Search in Rotated Sorted Array
+140. Search Rotated Array With Duplicates
+141. Find Minimum in Rotated Sorted Array
+142. Find Rotation Count
+143. Find Peak Element
+144. Single Element in Sorted Array
+145. Search a 2D Matrix
+146. Koko Eating Bananas
+147. Capacity to Ship Packages
+148. Minimum Days to Make Bouquets
+149. Aggressive Cows
+150. Allocate Minimum Pages
+Critical pattern
+Can I define:
+low
+high
+mid
+and determine whether the answer is
+too small / valid / too large?
+If yes → consider Binary Search on Answer.
+
+PHASE 9 — Linked Lists
+Questions 151–170
+151. Traverse Linked List
+152. Insert Node
+153. Delete Node
+154. Find Length
+155. Reverse Linked List
+156. Reverse Linked List Recursively
+157. Find Middle Node
+158. Detect Cycle
+159. Find Cycle Start
+160. Remove Cycle
+161. Remove Nth Node From End
+162. Find Nth Node From End
+163. Merge Two Sorted Lists
+164. Remove Duplicates From Sorted List
+165. Palindrome Linked List
+166. Intersection of Two Linked Lists
+167. Add Two Numbers
+168. Rotate Linked List
+169. Reorder Linked List
+170. Reverse Nodes in K-Group
+
+PHASE 10 — Stack + Monotonic Stack
+Questions 171–190
+171. Implement Stack
+172. Valid Parentheses
+173. Min Stack
+174. Evaluate Postfix Expression
+175. Evaluate Prefix Expression
+176. Infix to Postfix
+177. Next Greater Element
+178. Next Smaller Element
+179. Previous Greater Element
+180. Previous Smaller Element
+181. Daily Temperatures
+182. Stock Span
+183. Largest Rectangle in Histogram
+184. Maximal Rectangle
+185. Remove K Digits
+186. Decode String
+187. Simplify Path
+188. Asteroid Collision
+189. Basic Calculator
+190. Online Stock Span
+
+PHASE 11 — Queue + Deque
+Questions 191–200
+191. Implement Queue
+192. Implement Circular Queue
+193. Queue Using Stacks
+194. Stack Using Queues
+195. Implement Deque
+196. First Negative Number in Every Window
+197. Sliding Window Maximum
+198. Generate Binary Numbers 1–N
+**199
