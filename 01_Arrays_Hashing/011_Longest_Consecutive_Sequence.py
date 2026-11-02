@@ -1,47 +1,14 @@
-"""
-Problem 11: Longest Consecutive Sequence
-
-Category: 01_Arrays_Hashing
-
-LeetCode / Interview Problem
-"""
-
-
-# ============================================================
-# Problem
-# ============================================================
-
-# Longest Consecutive Sequence
-
-
-# ============================================================
-# Approach
-# ============================================================
-
-# TODO:
-# Explain your approach here.
-
-
-# ============================================================
-# Solution
-# ============================================================
-
-def solution():
-    pass
-
-
-# ============================================================
-# Complexity
-# ============================================================
-
-# Time Complexity:
-# Space Complexity:
-
-
-# ============================================================
-# Test Cases
-# ============================================================
-
-if __name__ == "__main__":
-    # Add your test cases here
-    pass
+def long_consec_seq(arr):
+    
+    s = set(arr)
+    
+    longest = 0
+    
+    for i in arr:
+        j = 1
+        
+        if i-1 not in s:
+            while i+j in s:
+                j += 1
+            longest = max(longest, j)
+    return longest

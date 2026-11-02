@@ -1,47 +1,29 @@
-"""
-Problem 83: Valid Parentheses
+def valid_parentheses(s: str) -> bool:
+    stack = []
+    
+    for ch in s:
+        if ch in '({[':
+            stack.append(ch)
+        elif ch == ')':
+            if len(stack) != 0 and stack[-1] == '(':
+                stack.pop()
+            else:
+                return False
+        elif ch == '}':
+            if len(stack) != 0 and stack[-1] == '{':
+                stack.pop()
+            else:
+                return False
+        elif ch == ']':
+            if len(stack) != 0 and stack[-1] == '[':
+                stack.pop()
+            else:
+                return False
+            
+    return len(stack) == 0
 
-Category: 05_Stack
-
-LeetCode / Interview Problem
-"""
-
-
-# ============================================================
-# Problem
-# ============================================================
-
-# Valid Parentheses
-
-
-# ============================================================
-# Approach
-# ============================================================
-
-# TODO:
-# Explain your approach here.
-
-
-# ============================================================
-# Solution
-# ============================================================
-
-def solution():
-    pass
-
-
-# ============================================================
-# Complexity
-# ============================================================
-
-# Time Complexity:
-# Space Complexity:
-
-
-# ============================================================
-# Test Cases
-# ============================================================
-
-if __name__ == "__main__":
-    # Add your test cases here
-    pass
+r = input("Enter the string of parentheses: ")
+if valid_parentheses(r):
+    print("The parentheses are valid.")
+else:
+    print("The parentheses are not valid.")
